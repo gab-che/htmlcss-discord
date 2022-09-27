@@ -84,22 +84,6 @@ nav a{
     color: var(--white);
 }
 
-/* Regole per le macro-sezioni */
-section{
-    padding: 5rem 0;
-}
-
-main section:first-of-type{
-    background-image: url("../img/jumbo.png");
-    background-size: cover;
-}
-
-.button-list{
-    justify-content: center;
-    column-gap: 1rem;
-    margin-bottom: 2rem;
-}
-
 /* Regole per titoli e paragrafi */
 .text-center{
     text-align: center;
@@ -118,21 +102,46 @@ h1{
     margin-bottom: 2rem;
 }
 
+h2{
+    font-size: 2.3rem;
+    margin-bottom: 1.7rem;
+}
+
 p{
     margin-bottom: 1rem;
 }
 
-.container.flex .blue{
-    background-color: #1e90ff;
-    padding: 10rem 0;
-    flex-grow: 1;
+/* Regole per le macro-sezioni */
+section{
+    padding: 5rem 0;
 }
 
-.container.flex .pink{
-    background-color: #ffc0cb;
-    padding: 10rem 0;
-    flex-basis: 40%;
+main section:first-of-type{
+    background-image: url("../img/jumbo.png");
+    background-size: cover;
 }
+
+.button-list{
+    justify-content: center;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+section .container.flex{
+    justify-content: space-between;
+}
+
+section .container.flex .image{
+    flex-grow: 1;
+    max-width: 550px;
+}
+
+section .container.flex .description{
+    flex-basis: 30%;
+    padding-top: 2rem;
+}
+
+
 
 section.grey{
     background-color: #d3d3d3;
