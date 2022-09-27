@@ -69,10 +69,12 @@ nav a{
     border: none;
     border-radius: 1rem;
     padding: .6rem 1.5rem;
+    transition: box-shadow .1s, color .1s, background-color .1s;
+    transition-timing-function: linear;
 }
 
 .btn:hover{
-    box-shadow: 0 3px 8px var(--darkgreymuted);
+    box-shadow: 0 5px 15px var(--darkgreymuted);
 }
 
 .btn-small{
