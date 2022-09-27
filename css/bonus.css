@@ -129,7 +129,7 @@ p{
 
 /* Regole per le macro-sezioni */
 section{
-    padding: 7rem 0;
+    padding: 5rem 0;
 }
 
 main section:first-of-type{
@@ -159,6 +159,15 @@ section .container.flex .description{
 
 section.grey{
     background-color: var(--lightgrey);
+}
+
+.grey-wave-bottom{
+    margin-bottom: -31rem;
+    transform: rotate(180deg);
+}
+
+.grey-wave-top{
+    margin-bottom: -6rem;
 }
 
 main section:last-of-type p{
