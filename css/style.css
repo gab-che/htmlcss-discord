@@ -97,6 +97,10 @@ nav a{
     color: var(--darkgrey);
 }
 
+.text-violet{
+    color: var(--violet);
+}
+
 h1{
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -166,25 +170,47 @@ main section:last-of-type .cta{
     background-size: contain;
 }
 
+/* Regole per il footer */
 footer{
-    background-color: #23272a;
+    background-color: var(--darkgrey);
 }
 
 footer .container{
-    padding: 1rem 0;
+    padding: 4rem 0 2rem;
 }
 
-footer .container .coral{
-    padding: 10rem 0;
-    flex-grow: 1;
-    background-color: #f08080;
-}
-
-footer .container .sea{
+footer .container [class*="col-"]{
     padding: 10rem 0;
     flex-basis: 15%;
-    background-color: #20b2aa;
 }
+
+footer .container .first-col{
+    flex-grow: 1;
+}
+
+/* Prima colonna */
+.first-col .lang-bar{
+    margin-bottom: 1rem;
+}
+
+.first-col img{
+    max-width: 20px;
+}
+
+.first-col select{
+    border: none;
+    background-color: transparent;
+}
+
+.first-col .icon-list{
+    margin-left: -0.5rem;
+}
+
+.first-col .icon-list a{
+    color: var(--white);
+    padding: .5rem;
+}
+
 
 hr{
     border-color: white;
