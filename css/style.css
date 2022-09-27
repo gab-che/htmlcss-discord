@@ -107,6 +107,11 @@ h2{
     margin-bottom: 1.7rem;
 }
 
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 1.4rem;
+}
+
 p{
     margin-bottom: 1rem;
 }
@@ -145,9 +150,20 @@ section.grey{
     background-color: var(--lightgrey);
 }
 
-main section:last-child .container{
-    padding: 12rem 0;
-    background-color: #228b22;
+main section:last-of-type p{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main section:last-of-type .cta{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.cta h3{
+    padding-top: 1.4rem;
+    background-image: url("../img/stars.svg");
+    background-size: contain;
 }
 
 footer{
