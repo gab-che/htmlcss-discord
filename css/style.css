@@ -12,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 /* Regole per i container */
@@ -123,6 +124,7 @@ h4{
 
 p{
     margin-bottom: 1rem;
+    line-height: 1.5rem;
 }
 
 /* Regole per le macro-sezioni */
@@ -184,12 +186,23 @@ footer .container{
     padding: 4rem 0 2rem;
 }
 
-footer .container [class*="col-"]{
+.footer-container-one{
+    padding-bottom: 2rem;
+}
+
+.footer-container-one [class*="col-"]{
     flex-basis: 15%;
 }
 
-footer .container .first-col{
+.footer-container-one .first-col{
     flex-grow: 1;
+}
+
+.footer-container-two{
+    border-top: 1px solid var(--violet);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
 }
 
 /* Prima colonna */
@@ -223,11 +236,7 @@ footer .container .first-col{
 [class*="col-"] a{
     text-decoration: none;
     color: var(--white);
+    line-height: 1.5rem;
 }
 
-.footer-container{
-    border-top: 1px solid var(--violet);
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0;
-}
+
