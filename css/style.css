@@ -1,3 +1,4 @@
+/* CSS Properties */
 :root{
     --blue: #3161e0;
     --darkgrey: #23272a;
@@ -6,12 +7,14 @@
     --violet: #8da0e0;
 }
 
+/* Reset CSS */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Regole per i container */
 .container{
     width: 920px;
     margin: 0 auto;
@@ -23,22 +26,14 @@
     padding: 10rem 0;
 }
 
-.border-black{
-    border: 2px dashed black;
-}
-
-.border-white{
-    border: 2px dashed white;
-}
-
-header{
-    background-color: #add8e6;
-    padding: 1rem 0;
-}
-
-header nav{
-    background-color: #daa520;
+.flex{
     display: flex;
+}
+
+/* Regole per l'header */
+header{
+    background-color: var(--blue);
+    padding: 1rem 0;
 }
 
 nav .logo, 
@@ -47,25 +42,20 @@ nav .login{
 }
 
 nav .link-list{
-    display: flex;
-    list-style: none;
     flex-grow: 1;
     column-gap: 0.5rem;
     justify-content: center;
     align-items: center;
+    list-style: none;
 }
 
 nav .login{
-    display: flex;
     justify-content: end;
 }
 
-nav .logo,
 nav a{
     padding: .5rem;
-}
-
-nav a{
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -77,9 +67,6 @@ main section:first-of-type{
     background-color: #00008b;
 }
 
-.flex{
-    display: flex;
-}
 
 .container.flex .blue{
     background-color: #1e90ff;
