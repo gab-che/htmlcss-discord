@@ -225,18 +225,9 @@ footer .container .first-col{
     color: var(--white);
 }
 
-hr{
-    border-color: white;
-}
-
-footer .container:last-child{
-    background-color: #7fffd4;
-    margin-top: 1rem;
+.footer-container{
+    border-top: 1px solid var(--violet);
     justify-content: space-between;
     align-items: center;
-}
-
-footer .container:last-child div{
-    background-color: #ffb6c1;
-    padding: .2rem;
+    padding: 1rem 0;
 }
