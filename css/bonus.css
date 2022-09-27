@@ -2,9 +2,11 @@
 :root{
     --blue: #255ee9;
     --darkgrey: #23272a;
+    --darkgreymuted: #23272adb;
     --white: #fdfdfd;
     --lightgrey: #f6f6f6;
     --violet: #8da0e0;
+    --lightviolet: #99a9e0;
 }
 
 /* Reset CSS */
@@ -67,12 +69,23 @@ nav a{
     border: none;
     border-radius: 1rem;
     padding: .6rem 1.5rem;
-    background-color: var(--white);
-    color: var(--darkgrey);
+}
+
+.btn:hover{
+    box-shadow: 0 3px 8px var(--darkgreymuted);
 }
 
 .btn-small{
     padding: .4rem 1rem;
+}
+
+.btn-white{
+    background-color: var(--white);
+    color: var(--darkgrey);
+}
+
+.btn-white:hover{
+    color: var(--violet);
 }
 
 .btn-black{
@@ -80,9 +93,17 @@ nav a{
     color: var(--white);
 }
 
+.btn-black:hover{
+    background-color: var(--darkgreymuted);
+}
+
 .btn-violet{
     background-color: var(--violet);
     color: var(--white);
+}
+
+.btn-violet:hover{
+    background-color: var(--lightviolet);
 }
 
 /* Regole per titoli e paragrafi */
