@@ -113,7 +113,7 @@ p{
 
 /* Regole per le macro-sezioni */
 section{
-    padding: 5rem 0;
+    padding: 7rem 0;
 }
 
 main section:first-of-type{
@@ -141,10 +141,8 @@ section .container.flex .description{
     padding-top: 2rem;
 }
 
-
-
 section.grey{
-    background-color: #d3d3d3;
+    background-color: var(--lightgrey);
 }
 
 main section:last-child .container{
