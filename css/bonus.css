@@ -56,6 +56,7 @@ nav .link-list{
 
 nav .login{
     justify-content: end;
+    align-items: center;
 }
 
 nav a{
@@ -78,7 +79,7 @@ nav a{
 }
 
 .btn-small{
-    padding: .4rem 1rem;
+    padding: .3rem .8rem;
 }
 
 .btn-white{
