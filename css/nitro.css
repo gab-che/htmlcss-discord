@@ -1,0 +1,78 @@
+/* CSS Properties */
+:root{
+    --bg-violet1: #9f87f4;
+    --bg-violet2: #e085f4;
+    --bg-green1: #06aca4;
+    --bg-green2: #23e2ed;
+    --bg-lightblue1: #35a6ff;
+    --bg-lightblue2: #23e8ff;
+    --bg-darkblue1: #4272ff;
+    --bg-darkblue2: #9093ff;
+    --bg-purple1: #857afe;
+    --bg-purple2: #e974fb;
+    --bg-pink1: #f949da;
+    --bg-pink2: #ffc751;
+    --bg-orange1: #f0721c;
+    --bg-orange2: #ffc547;
+}
+
+.bigger-container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.violet{
+    background-color: var(--bg-violet1);
+}
+
+.violet-gradient{
+    background: linear-gradient( var(--bg-violet1), var(--bg-violet2) );
+}
+
+.bigger-container .flex{
+    row-gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.justify-content{
+    justify-content: space-between;
+}
+
+.card{
+    width: calc(100% / 3 - 1rem);
+    padding: 3rem 5rem;
+    background-color: #f0721c;
+    border-radius: 10px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.green-gradient{
+    background: linear-gradient( var(--bg-green1), var(--bg-green2));
+}
+
+.lightblue-gradient{
+    background: linear-gradient( var(--bg-lightblue1), var(--bg-lightblue2));
+}
+
+.darkblue-gradient{
+    background: linear-gradient( var(--bg-darkblue1), var(--bg-darkblue2));
+}
+
+.purple-gradient{
+    background: linear-gradient( var(--bg-purple1), var(--bg-purple2));
+}
+
+.pink-gradient{
+    background: linear-gradient( var(--bg-pink1), var(--bg-pink2));
+}
+
+.orange-gradient{
+    background: linear-gradient( var(--bg-orange1), var(--bg-orange2));
+}
+
+footer .bigger-container{
+    padding: 4rem 0 2rem;
+}
